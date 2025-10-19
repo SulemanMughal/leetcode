@@ -7,23 +7,18 @@ This section visualizes common time complexity classes to compare their growth a
 ```mermaid
 %% Compare growth for n = 1..10
 xychart-beta
-	title "Growth of common complexities"
-	x-axis "n" 1 --> 10
-	y-axis "f(n)" 0 --> 3.7e6
-	dataset "O(1)":
-		1,1,1,1,1,1,1,1,1,1
-	dataset "O(log n)":
-		0,1,1,2,2,2,2,3,3,3
-	dataset "O(n)":
-		1,2,3,4,5,6,7,8,9,10
-	dataset "O(n log n)":
-		0,2,5,8,12,16,19,24,28,33
-	dataset "O(n^2)":
-		1,4,9,16,25,36,49,64,81,100
-	dataset "O(2^n)":
-		2,4,8,16,32,64,128,256,512,1024
-	dataset "O(n!)":
-		1,2,6,24,120,720,5040,40320,362880,3628800
+    title "Growth of common complexities"
+    x-axis "n" 1 --> 10
+    y-axis "f(n)" 0 --> 3700000
+
+    line "O(1)" [1,1,1,1,1,1,1,1,1,1]
+    line "O(log n)" [0,1,1,2,2,2,2,3,3,3]
+    line "O(n)" [1,2,3,4,5,6,7,8,9,10]
+    line "O(n log n)" [0,2,5,8,12,16,19,24,28,33]
+    line "O(n^2)" [1,4,9,16,25,36,49,64,81,100]
+    line "O(2^n)" [2,4,8,16,32,64,128,256,512,1024]
+    line "O(n!)" [1,2,6,24,120,720,5040,40320,362880,3628800]
+
 ```
 
 Notes:
